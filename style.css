@@ -279,54 +279,6 @@ section .title::after {
   background: #23b410;
 }
 
-/* services styling */
-/*.services {
-  color: white;
-  background: black;
-  background: url("images/leaves_bushes_green_174515_3840x2400.jpg");
-  background-size: 2000px;
-}
-.services .title::before {
-  background: white;
-}
-.services .title::after {
-  background: black;
-  content: "What I provide";
-}
-.services .serv-content .card {
-  width: calc(33% - 20px);
-  text-align: center;
-  background: none;
-  border-radius: 6px;
-  padding: 20px 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.services .serv-content .card:hover {
-  background: none;
-}
-.services .serv-content .card .box {
-  transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box {
-  transform: scale(1.05);
-}
-.services .serv-content .card i {
-  font-size: 50px;
-  color: #23b410;
-  transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i {
-  color: #23b410;
-}
-.services .serv-content .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-*/
-/* Skills Section Styling */
-
 .skills {
   background: #000;
 }
@@ -419,6 +371,7 @@ section .title::after {
   text-align: center;
   transition: all 0.3s;
   position: relative;
+  outline: 3px solid #fff;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -444,12 +397,12 @@ section .title::after {
   object-fit: cover;
 }
 .project_container figure {
-  width: 510px;
-  height: 700px;
+  width: 350px;
+  height: 350px;
 }
 .project_container .project_card {
   position: absolute;
-  bottom: 30%;
+  bottom: 3%;
   left: 0;
   right: 0;
   padding: 20px;
@@ -510,19 +463,26 @@ section .title::after {
 }
 
 /* contact section styling */
+
 .contact-container {
   background: #124429;
   color: #fff;
+  width: 50%;
+  margin: auto;
+  padding: 30px 10px;
   text-align: center;
+  border-radius: 10px;
   box-shadow: 4px 5px 4px 5px rgba(213, 209, 209, 0.023);
-  margin-bottom: 40px;
 }
 .contact-container ul {
   list-style: none;
+  display: flex;
+  padding-block: 20px;
+  justify-content: center;
 }
 .contact-container .social-link {
   font-size: 42px;
-  margin: 10px 20px;
+  margin: 10px 25px;
   color: #ff7e67;
 }
 /* footer styling */
@@ -712,6 +672,15 @@ footer i:hover {
     width: 100%;
     margin-bottom: 35px;
   }
+  .project_layout {
+    display: flex;
+    margin: 0 auto 60px;
+    flex-direction: column;
+  }
+
+  .project_container {
+    width: 20rem;
+  }
 }
 @media (max-width: 690px) {
   .max-width {
@@ -735,19 +704,5 @@ footer i:hover {
   }
   .home .home-content .text-3 {
     font-size: 27px;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  .project_layout {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .project_container {
-    margin-left: -5rem;
-    width: 20rem;
   }
 }
