@@ -467,10 +467,10 @@ section .title::after {
 .contact-container {
   background: #124429;
   color: #fff;
-  width: 50%;
-  margin: auto;
-  padding: 30px 10px;
   text-align: center;
+  width: 350px;
+  margin: auto;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 4px 5px 4px 5px rgba(213, 209, 209, 0.023);
 }
