@@ -291,7 +291,7 @@ section .title::after {
   margin-top: 20px;
   font-size: 20px;
   font-weight: 500;
-  padding: 5px 30px;
+  padding: 20px 30px;
   border-radius: 6px;
   background: #23b410;
   transition: all 0.3s ease;
@@ -675,8 +675,11 @@ footer i:hover {
 
   .skills .icons,
   .skills .top {
-    margin: 0 auto 60px;
+    margin: 0 auto;
+    margin-left: 12px;
+    gap: 5px;
   }
+
   .project_layout {
     display: flex;
     margin: 0 auto 60px;
