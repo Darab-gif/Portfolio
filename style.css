@@ -281,6 +281,7 @@ section .title::after {
 
 .skills {
   background: #000;
+  margin: auto;
 }
 
 .skills a {
@@ -288,7 +289,7 @@ section .title::after {
   background: none;
   color: #fff;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 20px;
   font-weight: 500;
   padding: 20px 30px;
@@ -297,8 +298,9 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .icons {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 10px;
   margin-left: 50px;
 }
 .skill-card {
@@ -319,7 +321,6 @@ section .title::after {
   padding-top: 20px;
   display: flex;
   gap: 10px;
-  margin-left: 50px;
 }
 .skill-icon {
   display: none;
@@ -330,13 +331,13 @@ section .title::after {
 .skill-card:hover .skill-info {
   display: none;
 }
-
-.skill-card:hover .skill-icon {
-  display: block;
-}
 .skill-card:hover {
   transform: translateY(10px);
 }
+.skill-card:hover .skill-icon {
+  display: block;
+}
+
 .skill-img {
   display: block;
   margin: auto;
@@ -673,13 +674,21 @@ footer i:hover {
     flex: 100%;
   }
 
-  .skills .icons,
-  .skills .top {
-    margin: 0 auto;
-    margin-left: 12px;
-    gap: 5px;
+  .skills .icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto 0 10px;
   }
-
+  body {
+    overflow-x: hidden;
+  }
+  /*
+  .skill-card {
+    width: 86px;
+  }
+  .skill-info {
+    font-size: 14px;
+  }*/
   .project_layout {
     display: flex;
     margin: 0 auto 60px;
