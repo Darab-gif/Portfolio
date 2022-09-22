@@ -697,6 +697,7 @@ footer i:hover {
 
   .project_container {
     width: 20rem;
+    margin: 0 auto 0 -0.6rem;
   }
 }
 @media (max-width: 690px) {
