@@ -294,6 +294,53 @@
             >
           </div>
         </div>
+        <div class="project_container" data-aos="fade-right">
+          <figure>
+            <img
+              src="./images/dentol.png"
+              width="510"
+              height="700"
+              loading="lazy"
+              class="img_cover"
+            />
+          </figure>
+          <div class="project_card">
+            <h1>Dentol</h1>
+            <p>
+              Dentol is a responsive Dental service landing page built with
+              React and TailwindCSS
+            </p>
+            <div class="project_stack">
+              <span>React</span>
+              <span>TailwindCSS</span>
+            </div>
+            <a href="https://dentol.netlify.app/"><button>Live Link</button></a>
+          </div>
+        </div>
+        <div class="project_container" data-aos="fade-up">
+          <figure>
+            <img
+              src="./images/crypto.png"
+              width="510"
+              height="700"
+              loading="lazy"
+              class="img_cover"
+            />
+          </figure>
+          <div class="project_card">
+            <h1>Crappo</h1>
+            <p>
+              Crappo is a responsive crypto landing page built with React,
+              TailwindCSS and AOS animation
+            </p>
+            <div class="project_stack">
+              <span>React</span>
+              <span>TailwindCSS</span>
+              <span>AOS</span>
+            </div>
+            <a href="https://dentol.netlify.app/"><button>Live Link</button></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -357,22 +404,7 @@
       </div>
     </footer>
     <script src="script.js"></script>
-    <script>
-      // When the user scrolls the page, execute myFunction
-      window.onscroll = function () {
-        myFunction();
-      };
 
-      function myFunction() {
-        var winScroll =
-          document.body.scrollTop || document.documentElement.scrollTop;
-        var height =
-          document.documentElement.scrollHeight -
-          document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
-      }
-    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({ easing: "ease-in", delay: 100, duration: 300, offset: 100 });

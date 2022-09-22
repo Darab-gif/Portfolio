@@ -1,23 +1,3 @@
-function sendMail(params) {
-  var tempParams = {
-    from_name: document.getElementById("fromName").value,
-    email_sender: document.getElementById("emailSender").value,
-    subject_sender: document.getElementById("subjectSender").value,
-    message_sender: document.getElementById("message").value,
-  };
-  emailjs
-    .send("{{SERVICE ID}}", "{{TEMPLATE ID}}", tempParams)
-    .then(function (res) {
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Mail Sent Successfully!",
-        showConfirmButton: false,
-        timer: 1500,
-      });
-    });
-}
-
 $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 20) {
@@ -62,3 +42,37 @@ btnScrollToTop.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+  myFunction();
+};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+function sendMail(params) {
+  var tempParams = {
+    from_name: document.getElementById("fromName").value,
+    email_sender: document.getElementById("emailSender").value,
+    subject_sender: document.getElementById("subjectSender").value,
+    message_sender: document.getElementById("message").value,
+  };
+  emailjs
+    .send("{{SERVICE ID}}", "{{TEMPLATE ID}}", tempParams)
+    .then(function (res) {
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Mail Sent Successfully!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    });
+}
