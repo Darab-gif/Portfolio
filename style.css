@@ -299,9 +299,9 @@ section .title::after {
 }
 .icons {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  row-gap: 10px;
-  margin-left: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+  margin-left: 118px;
 }
 .skill-card {
   border: 2px solid #f24b88;
@@ -677,7 +677,7 @@ footer i:hover {
   .skills .icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto 0 10px;
+    margin: 0 auto 0 20px;
   }
   body {
     overflow-x: hidden;
