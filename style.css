@@ -598,7 +598,7 @@ footer i:hover {
 /* response media query starts */
 @media (max-width: 1300px) {
   .home .max-width {
-    margin-left: 118px;
+    margin-left: 0;
   }
 }
 @media (max-width: 1104px) {
@@ -613,9 +613,6 @@ footer i:hover {
   }
 }
 @media (max-width: 947px) {
-  .home .max-width {
-    margin-left: 6px;
-  }
   .max-width {
     padding: 0 50px;
   }
@@ -704,14 +701,10 @@ footer i:hover {
   }
 }
 @media (max-width: 690px) {
-  .home .max-width {
-    margin-left: 6px;
-  }
   .max-width {
     padding: 0 23px;
   }
   .home .home-content .text-2 {
-    width: 900px;
     font-size: 60px;
   }
   .home .home-content .text-3 {
