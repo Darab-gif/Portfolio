@@ -688,7 +688,7 @@ footer i:hover {
     font-size: 35px;
   }
   .max-width {
-    max-width: 800px;
+    max-width: 500px;
   }
   .about .about-content .column {
     width: 100%;
@@ -738,30 +738,19 @@ footer i:hover {
   .max-width {
     padding: 0 23px;
   }
-  .navbar .menu {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background: black;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
-  }
+
   .home .home-content .text-2 {
     width: 900px;
     font-size: 60px;
   }
-  body {
-    overflow-x: hidden;
-  }
+
   .home .home-content .text-3 {
     font-size: 32px;
   }
   .services .serv-content .card,
   .skills .skills-content .column,
-  .contact .contact-content .column {
+  .contact .contact-content .column,
+  .navbar .max-width {
     width: 100%;
   }
   .project_layout {
@@ -776,9 +765,6 @@ footer i:hover {
   }
 }
 @media (max-width: 500px) {
-  body {
-    overflow-x: hidden;
-  }
   .home .home-content .text-2 {
     font-size: 50px;
   }
@@ -790,17 +776,7 @@ footer i:hover {
     margin: 0 auto 60px;
     flex-direction: column;
   }
-  .navbar .menu {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background: black;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
-  }
+
   .project_container {
     width: 20rem;
     margin: 0 auto 0 -0.6rem;
