@@ -790,7 +790,17 @@ footer i:hover {
     margin: 0 auto 60px;
     flex-direction: column;
   }
-
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: black;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
   .project_container {
     width: 20rem;
     margin: 0 auto 0 -0.6rem;
