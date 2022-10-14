@@ -741,6 +741,9 @@ footer i:hover {
     width: 900px;
     font-size: 60px;
   }
+  body {
+    overflow-x: hidden;
+  }
   .home .home-content .text-3 {
     font-size: 32px;
   }
@@ -761,6 +764,9 @@ footer i:hover {
   }
 }
 @media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
   .home .home-content .text-2 {
     font-size: 50px;
   }
