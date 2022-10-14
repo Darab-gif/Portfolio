@@ -12,7 +12,6 @@ html {
 
 body {
   background: #000;
-  width: 100%;
 }
 
 .favicon {
@@ -607,39 +606,15 @@ footer i:hover {
     height: 350px;
     width: 350px;
   }
-  .project_layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .project_container {
-    width: 20rem;
-    margin: 0 auto 0 -0.6rem;
-  }
 }
 @media (max-width: 991px) {
-  .home .max-width {
-    margin-left: 0;
-  }
   .max-width {
     padding: 0 50px;
-  }
-  .project_layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .project_container {
-    width: 20rem;
-    margin: 0 auto 0 -0.6rem;
   }
 }
 @media (max-width: 947px) {
   .home .max-width {
-    margin-left: 50px;
-  }
-  .skills {
-    margin-left: 65px;
+    margin-left: 6px;
   }
   .max-width {
     padding: 0 50px;
@@ -655,9 +630,6 @@ footer i:hover {
     visibility: visible;
     position: absolute;
     content: "\e5cd";
-  }
-  .navbar {
-    margin-left: 6px;
   }
   .navbar .menu {
     position: fixed;
@@ -691,7 +663,7 @@ footer i:hover {
     font-size: 35px;
   }
   .max-width {
-    max-width: 500px;
+    max-width: 800px;
   }
   .about .about-content .column {
     width: 100%;
@@ -721,9 +693,9 @@ footer i:hover {
     font-size: 14px;
   }*/
   .project_layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     margin: 0 auto 60px;
+    flex-direction: column;
   }
 
   .project_container {
@@ -735,58 +707,20 @@ footer i:hover {
   .home .max-width {
     margin-left: 6px;
   }
-  .skills {
-    margin-left: 6px;
-  }
   .max-width {
     padding: 0 23px;
-  }
-  .navbar .menu {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background: black;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
-  }
-
-  .navbar .menu.active {
-    left: 0;
-  }
-  .navbar .menu li {
-    display: block;
-  }
-  .navbar .menu li a {
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
   }
   .home .home-content .text-2 {
     width: 900px;
     font-size: 60px;
   }
-
   .home .home-content .text-3 {
     font-size: 32px;
   }
   .services .serv-content .card,
   .skills .skills-content .column,
-  .contact .contact-content .column,
-  .navbar .max-width {
+  .contact .contact-content .column {
     width: 100%;
-  }
-  .project_layout {
-    display: flex;
-    margin: 0 160px 60px;
-    flex-direction: column;
-  }
-
-  .project_container {
-    width: 20rem;
-    margin: 0 auto 0 -0.6rem;
   }
 }
 @media (max-width: 500px) {
@@ -795,38 +729,5 @@ footer i:hover {
   }
   .home .home-content .text-3 {
     font-size: 27px;
-  }
-  .navbar .menu {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background: black;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
-  }
-
-  .navbar .menu.active {
-    left: 0;
-  }
-  .navbar .menu li {
-    display: block;
-  }
-  .navbar .menu li a {
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
-  }
-  .project_layout {
-    display: flex;
-    margin: 0 auto 60px;
-    flex-direction: column;
-  }
-
-  .project_container {
-    width: 20rem;
-    margin: 0 auto 0 -0.6rem;
   }
 }
