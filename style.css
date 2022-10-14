@@ -12,6 +12,7 @@ html {
 
 body {
   background: #000;
+  width: 100%;
 }
 
 .favicon {
@@ -736,6 +737,17 @@ footer i:hover {
   }
   .max-width {
     padding: 0 23px;
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: black;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
   }
   .home .home-content .text-2 {
     width: 900px;
